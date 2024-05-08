@@ -7,34 +7,45 @@ function closeNav() {
 }
 var tl4 = gsap.timeline()
 tl4.from("#logo a",{
-  y:-60,
-  duration:2.5,
-  opacity:0,
+  y:-30,
+  duration:1,
+//  opacity:0,
   delay:0.5,
-  stagger:0.3
+  stagger:0.1
 })
 
 tl4.from(".overlay-content a",{
-  y:-60,
-  duration:2.5,
-  opacity:0,
-  delay:0.5,
-  stagger:0.3
+  y:-20,
+  duration:1,
+  opacity:.2
 })
 tl4.from(".explore-word h1",{
-  y:-60,
-  duration:2.5,
-  opacity:0,
-  delay:0.5,
-  stagger:0.3
+  y:-5,
+  duration:0.5,
+  opacity:0
+})
+tl4.from("#img2",{
+  x:5,
+  duration:0.5,
+  opacity:0
 })
 
 tl4.from("#img1",{
-  x:-60,
-  duration:2.5,
+  x:-5,
+  duration:0.3,
+  opacity:0
+})
+tl4.from("#img3",{
+  x:10,
+  duration:0.1,
   opacity:0,
-  delay:0.5,
-  stagger:0.3
+  stagger:0.1
+})
+tl4.from(".scroll",{
+  y:10,
+  duration:0.5,
+  opacity:0,
+  stagger:0.1
 })
 
 var tl3 = gsap.timeline()
