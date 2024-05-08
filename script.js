@@ -5,17 +5,62 @@ function openNav() {
 function closeNav() {
   document.querySelector(".black").style.height = "0%";
 }
+var tl4 = gsap.timeline()
+tl4.from("#logo a",{
+  y:-60,
+  duration:2.5,
+  opacity:0,
+  delay:0.5,
+  stagger:0.3
+})
 
-gsap.to("#page2 h1", {
-  transform: "translateX(-600%)",
-  fontWeight: "900",
+tl4.from(".overlay-content a",{
+  y:-60,
+  duration:2.5,
+  opacity:0,
+  delay:0.5,
+  stagger:0.3
+})
+tl4.from(".explore-word h1",{
+  y:-60,
+  duration:2.5,
+  opacity:0,
+  delay:0.5,
+  stagger:0.3
+})
+
+tl4.from("#img1",{
+  x:-60,
+  duration:2.5,
+  opacity:0,
+  delay:0.5,
+  stagger:0.3
+})
+
+var tl3 = gsap.timeline()
+tl3.to("#page2 .text-h2", {
+  transform: "translateX(-200%)",
+  fontWeight: "700",
   scrollTrigger: {
     trigger: "#page2", 
     scroller: "body", 
   //  markers: true, 
     start: "top 0", 
-    end: "top -50%", 
-    scrub: 5, 
+    end: "top 60%", 
+    scrub: 3, 
+    pin: true  
+  }
+});
+tl3.to("#page2 .text-h3", {
+  transform: "translateX(-150%)",
+  fontWeight: "700",
+  scrollTrigger: {
+    trigger: "#page2", 
+    scroller: "body", 
+  markers: true, 
+    start: "top -30%", 
+    end: "top -60%", 
+    scrub: 3, 
     pin: true  
   }
 });
@@ -25,7 +70,7 @@ gsap.to("#page3 img", {
             trigger: "#page3",
             start: "top top",
             end: "50% 350%",
-            markers:true,
+           // markers:true,
         //  pin: true,
             scrub: 5
         },

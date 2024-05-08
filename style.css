@@ -250,22 +250,33 @@ z-index: 2;
 }
 #page2 div{
   text-align: center;
-  margin-top: 2vh;
+  margin-top: 5vh;
   font-size: 6vw;
   font-family: Sportsquake-8K1z ;
   text-decoration: underline;
 }
 
 
-#page2 h1{
-  letter-spacing: 1vw;
+#page2 .text-h2{
   font-family: Montserrat;
+  margin-top: 10vh;
   font-weight:100;
-  letter-spacing: 1.5vw;
-font-size: 30vh;
+  letter-spacing: -1vw;
+font-size: 20vh;
 text-transform: uppercase;
 white-space: nowrap;
 }
+#page2 .text-h3{
+  transform: translateX(50vw);
+  font-family: Montserrat;
+  margin-top: 10vh;
+  font-weight:100;
+  letter-spacing: -1vw;
+font-size: 20vh;
+text-transform: uppercase;
+white-space: nowrap;
+}
+
 
 
 
